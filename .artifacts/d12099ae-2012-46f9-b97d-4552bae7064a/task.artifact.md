@@ -1,0 +1,6 @@
+- [x] Fix package name and imports in `MainActivity.kt`
+- [x] Align theme with `DasturrrrrrTheme`
+- [x] Populate "Bugungi so'z" card with data
+- [x] Improve Search Bar and Navigation Bar aesthetics
+- [x] Refine Category and History list styling
+- [x] Verify build and preview

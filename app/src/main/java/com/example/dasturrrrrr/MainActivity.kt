@@ -445,6 +445,207 @@ object Dictionary {
         Word(383, "wife", "xotin", "Oila"),
         Word(384, "family", "oila", "Oila"),
         Word(385, "person", "shaxs", "Oila"),
-        Word(386, "student", "talaba", "Oila")
+        Word(386, "student", "talaba", "Oila"),
+             // ---- Uy ----
+    Word(387, "home", "uy", "Uy"), Word(388, "house", "hovli", "Uy"), Word(389, "room", "xona", "Uy"),
+    Word(390, "kitchen", "oshxona", "Uy"), Word(391, "bedroom", "yotoqxona", "Uy"), Word(392, "bathroom", "yuvinish xonasi", "Uy"),
+    Word(393, "toilet", "hojatxona", "Uy"), Word(394, "wall", "devor", "Uy"), Word(395, "floor", "pol", "Uy"),
+    Word(396, "ceiling", "shift", "Uy"), Word(397, "roof", "tom", "Uy"), Word(398, "door", "eshik", "Uy"),
+    Word(399, "window", "deraza", "Uy"), Word(400, "stairs", "zinapoya", "Uy"), Word(401, "garden", "bog'", "Uy"),
+    Word(402, "gate", "darvoza", "Uy"), Word(403, "furniture", "mebel", "Uy"), Word(404, "table", "stol", "Uy"),
+    Word(405, "chair", "stul", "Uy"), Word(406, "bed", "karovot", "Uy"), Word(407, "sofa", "divan", "Uy"),
+    Word(408, "shelf", "javon", "Uy"), Word(409, "mirror", "oyna", "Uy"), Word(410, "lamp", "chiroq", "Uy"),
+    Word(411, "clock", "soat", "Uy"), Word(412, "key", "kalit", "Uy"), Word(413, "carpet", "gilam", "Uy"),
+    Word(414, "curtain", "parda", "Uy"),
+
+    // ---- Transport va texnika ----
+    Word(415, "car", "mashina", "Transport"), Word(416, "bus", "avtobus", "Transport"), Word(417, "train", "poyezd", "Transport"),
+    Word(418, "plane", "samolyot", "Transport"), Word(419, "bicycle", "velosiped", "Transport"), Word(420, "truck", "yuk mashinasi", "Transport"),
+    Word(421, "ship", "kema", "Transport"), Word(422, "boat", "qayiq", "Transport"), Word(423, "taxi", "taksi", "Transport"),
+    Word(424, "airport", "aeroport", "Transport"), Word(425, "station", "bekat", "Transport"), Word(426, "ticket", "chipta", "Transport"),
+    Word(427, "office", "idora", "Transport"), Word(428, "computer", "kompyuter", "Transport"), Word(429, "keyboard", "klaviatura", "Transport"),
+    Word(430, "mouse", "sichqoncha", "Transport"), Word(431, "screen", "ekran", "Transport"), Word(432, "internet", "internet", "Transport"),
+    Word(433, "phone", "telefon", "Transport"), Word(434, "paper", "qog'oz", "Transport"), Word(435, "pencil", "qalam", "Transport"),
+    Word(436, "pen", "ruchka", "Transport"), Word(437, "notebook", "daftar", "Transport"), Word(438, "eraser", "o'chirg'ich", "Transport"),
+
+    // ---- Vaqt va sonlar ----
+    Word(439, "second", "soniya", "Vaqt"), Word(440, "minute", "daqiqa", "Vaqt"), Word(441, "hour", "soat", "Vaqt"),
+    Word(442, "week", "hafta", "Vaqt"), Word(443, "month", "oy", "Vaqt"), Word(444, "century", "asr", "Vaqt"),
+    Word(445, "morning", "ertalab", "Vaqt"), Word(446, "afternoon", "tushlik", "Vaqt"), Word(447, "evening", "kechqurun", "Vaqt"),
+    Word(448, "night", "tun", "Vaqt"), Word(449, "today", "bugun", "Vaqt"), Word(450, "tomorrow", "ertaga", "Vaqt"),
+    Word(451, "yesterday", "kecha", "Vaqt"), Word(452, "Monday", "Dushanba", "Vaqt"), Word(453, "Tuesday", "Seshanba", "Vaqt"),
+    Word(454, "Wednesday", "Chorshanba", "Vaqt"), Word(455, "Thursday", "Payshanba", "Vaqt"), Word(456, "Friday", "Juma", "Vaqt"),
+    Word(457, "Saturday", "Shanba", "Vaqt"), Word(458, "Sunday", "Yakshanba", "Vaqt"), Word(459, "January", "Yanvar", "Vaqt"),
+    Word(460, "zero", "nol", "Vaqt"), Word(461, "three", "uch", "Vaqt"), Word(462, "four", "to'rt", "Vaqt"),
+    Word(463, "five", "besh", "Vaqt"), Word(464, "six", "olti", "Vaqt"), Word(465, "seven", "yetti", "Vaqt"),
+    Word(466, "eight", "sakkiz", "Vaqt"), Word(467, "nine", "to'qqiz", "Vaqt"), Word(468, "ten", "o'n", "Vaqt"),
+    Word(469, "twenty", "yigirma", "Vaqt"), Word(470, "thirty", "o'ttiz", "Vaqt"), Word(471, "forty", "qirq", "Vaqt"),
+    Word(472, "fifty", "ellik", "Vaqt"), Word(473, "hundred", "yuz", "Vaqt"), Word(474, "thousand", "ming", "Vaqt"),
+    Word(475, "million", "million", "Vaqt"), Word(476, "billion", "milliard", "Vaqt"),
+
+    Word(477, "money", "pul", "Jamiyat"), Word(478, "price", "narx", "Jamiyat"), Word(479, "shop", "do'kon", "Jamiyat"),
+    Word(480, "market", "bozor", "Jamiyat"), Word(481, "job", "ish", "Jamiyat"), Word(482, "law", "qonun", "Jamiyat"),
+    Word(483, "country", "mamlakat", "Jamiyat"), Word(484, "city", "shahar", "Jamiyat"), Word(485, "village", "qishloq", "Jamiyat"),
+    Word(486, "road", "yo'l", "Jamiyat"), Word(487, "bridge", "ko'prik", "Jamiyat"), Word(488, "building", "bino", "Jamiyat"),
+    Word(489, "history", "tarix", "Jamiyat"), Word(490, "art", "san'at", "Jamiyat"), Word(491, "music", "musiqa", "Jamiyat"),
+    Word(492, "sport", "sport", "Jamiyat"), Word(493, "game", "o'yin", "Jamiyat"), Word(494, "health", "sog'lik", "Jamiyat"),
+    Word(495, "medicine", "dori", "Jamiyat"), Word(496, "dream", "orzu", "Jamiyat"), Word(497, "hope", "umid", "Jamiyat"),
+    Word(498, "peace", "tinchlik", "Jamiyat"), Word(499, "war", "urush", "Jamiyat"), Word(500, "love", "sevgi", "Jamiyat"),
+    Word(501, "hate", "nafrat", "Jamiyat"), Word(502, "fear", "qo'rquv", "Jamiyat"), Word(503, "power", "kuch", "Jamiyat"),
+    Word(504, "idea", "g'oya", "Jamiyat"), Word(505, "mind", "aql", "Jamiyat"), Word(506, "life", "hayot", "Jamiyat"),
+    Word(507, "death", "o'lim", "Jamiyat"), Word(508, "success", "muvaffaqiyat", "Jamiyat"), Word(509, "failure", "mag'lubiyat", "Jamiyat"),
+    Word(510, "language", "til", "Jamiyat"), Word(511, "word", "so'z", "Jamiyat"), Word(512, "sentence", "gap", "Jamiyat"),
+    Word(513, "question", "savol", "Jamiyat"), Word(514, "answer", "javob", "Jamiyat"), Word(515, "reason", "sabab", "Jamiyat"),
+    Word(516, "difference", "farq", "Jamiyat"),
+
+    // ---- Kasblar ----
+    Word(517, "doctor", "shifokor", "Kasb"), Word(518, "nurse", "hamshira", "Kasb"), Word(519, "teacher", "o'qituvchi", "Kasb"),
+    Word(520, "engineer", "muhandis", "Kasb"), Word(521, "lawyer", "advokat", "Kasb"), Word(522, "artist", "rassom", "Kasb"),
+    Word(523, "writer", "yozuvchi", "Kasb"), Word(524, "pilot", "uchuvchi", "Kasb"), Word(525, "driver", "haydovchi", "Kasb"),
+    Word(526, "farmer", "dehqon", "Kasb"), Word(527, "soldier", "askar", "Kasb"), Word(528, "police", "politsiya", "Kasb"),
+    Word(529, "cook", "oshpaz", "Kasb"), Word(530, "manager", "menejer", "Kasb"), Word(531, "secretary", "kotib", "Kasb"),
+    Word(532, "worker", "ishchi", "Kasb"),
+
+    // ---- Salomlashish ----
+    Word(533, "hello", "salom", "Salomlashish"), Word(534, "goodbye", "xayr", "Salomlashish"), Word(535, "please", "iltimos", "Salomlashish"),
+    Word(536, "thanks", "rahmat", "Salomlashish"), Word(537, "sorry", "kechirasiz", "Salomlashish"), Word(538, "yes", "ha", "Salomlashish"),
+    Word(539, "maybe", "balki", "Salomlashish")
     )
 }
+
+
+
+class UserPreferences(context: Context) {
+
+    private val prefs: SharedPreferences =
+        context.getSharedPreferences("lugat_prefs", Context.MODE_PRIVATE)
+
+    fun isDarkMode(): Boolean = prefs.getBoolean(KEY_DARK_MODE, false)
+    fun setDarkMode(enabled: Boolean) = prefs.edit { putBoolean(KEY_DARK_MODE, enabled) }
+
+    fun isSystemTheme(): Boolean = prefs.getBoolean(KEY_SYSTEM_THEME, true)
+    fun setSystemTheme(enabled: Boolean) = prefs.edit { putBoolean(KEY_SYSTEM_THEME, enabled) }
+
+    fun getFontScale(): Float = prefs.getFloat(KEY_FONT_SCALE, 1f)
+    fun setFontScale(scale: Float) = prefs.edit { putFloat(KEY_FONT_SCALE, scale) }
+
+    fun getFavoriteIds(): Set<Int> =
+        prefs.getStringSet(KEY_FAVORITES, emptySet())
+            ?.mapNotNull { it.toIntOrNull() }
+            ?.toSet() ?: emptySet()
+
+    fun setFavoriteIds(ids: Set<Int>) =
+        prefs.edit { putStringSet(KEY_FAVORITES, ids.map { it.toString() }.toSet()) }
+
+    fun getHistoryIds(): List<Int> =
+        prefs.getString(KEY_HISTORY, "")
+            ?.split(",")
+            ?.filter { it.isNotBlank() }
+            ?.mapNotNull { it.toIntOrNull() }
+            ?: emptyList()
+     fun setHistoryIds(ids: List<Int>) =
+        prefs.edit { putString(KEY_HISTORY, ids.joinToString(",")) }
+
+    companion object {
+        private const val KEY_DARK_MODE = "dark_mode"
+        private const val KEY_SYSTEM_THEME = "system_theme"
+        private const val KEY_FONT_SCALE = "font_scale"
+        private const val KEY_FAVORITES = "favorites"
+        private const val KEY_HISTORY = "history"
+    }
+}
+
+// =========================================================================
+// 4) TALAFFUZ — Pronouncer.kt (TextToSpeech o'rami)
+// =========================================================================
+
+class Pronouncer(context: Context) : TextToSpeech.OnInitListener {
+
+    private var tts: TextToSpeech? = null
+    private var isReady = false
+
+    init {
+        tts = TextToSpeech(context.applicationContext, this)
+    }
+
+    override fun onInit(status: Int) {
+        if (status == TextToSpeech.SUCCESS) {
+            val result = tts?.setLanguage(Locale.US)
+            isReady = result != TextToSpeech.LANG_MISSING_DATA &&
+                    result != TextToSpeech.LANG_NOT_SUPPORTED
+        }
+    }
+
+    fun speak(text: String) {
+        if (isReady) {
+            tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "lugat_word")
+        }
+    }
+
+    fun shutdown() {
+        tts?.stop()
+        tts?.shutdown()
+        tts = null
+    }
+}
+
+// =========================================================================
+// 5) VIEWMODEL — AppViewModel.kt (butun ilova holati shu yerda)
+// =========================================================================
+
+class AppViewModel(application: Application) : AndroidViewModel(application) {
+
+    private val prefs = UserPreferences(application)
+    private val pronouncer = Pronouncer(application)
+
+    val allWords: List<Word> = Dictionary.words
+
+    private val _favoriteIds = MutableStateFlow(prefs.getFavoriteIds())
+    val favoriteIds: StateFlow<Set<Int>> = _favoriteIds.asStateFlow()
+
+    private val _historyIds = MutableStateFlow(prefs.getHistoryIds())
+    val historyIds: StateFlow<List<Int>> = _historyIds.asStateFlow()
+
+    private val _isDarkMode = MutableStateFlow(prefs.isDarkMode())
+    val isDarkMode: StateFlow<Boolean> = _isDarkMode.asStateFlow()
+
+    private val _followSystemTheme = MutableStateFlow(prefs.isSystemTheme())
+    val followSystemTheme: StateFlow<Boolean> = _followSystemTheme.asStateFlow()
+
+    private val _fontScale = MutableStateFlow(prefs.getFontScale())
+    val fontScale: StateFlow<Float> = _fontScale.asStateFlow()
+
+    fun toggleFavorite(word: Word) {
+        val current = _favoriteIds.value.toMutableSet()
+        if (!current.add(word.id)) current.remove(word.id)
+        _favoriteIds.value = current
+        prefs.setFavoriteIds(current)
+    }
+
+    fun addToHistory(word: Word) {
+        val current = _historyIds.value.toMutableList()
+        current.remove(word.id)
+        current.add(0, word.id)
+        val trimmed = current.take(50)
+        _historyIds.value = trimmed
+        prefs.setHistoryIds(trimmed)
+    }
+
+    fun clearHistory() {
+        _historyIds.value = emptyList()
+        prefs.setHistoryIds(emptyList())
+    }
+
+    fun pronounce(word: Word) {
+        addToHistory(word)
+        pronouncer.speak(word.english)
+    }
+
+    fun setDarkMode(enabled: Boolean) {
+        _isDarkMode.value = enabled
+        prefs.setDarkMode(enabled)
+    }
+
+    fun setFollowSystemTheme(enabled: Boolean) {
+        _followSystemTheme.value = enabled}
+

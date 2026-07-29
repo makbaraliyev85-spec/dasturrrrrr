@@ -647,5 +647,8 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun setFollowSystemTheme(enabled: Boolean) {
-        _followSystemTheme.value = enabled}
+        _followSystemTheme.value = enabled
+        prefs.setSystemTheme(enabled)
+    }}
+
 

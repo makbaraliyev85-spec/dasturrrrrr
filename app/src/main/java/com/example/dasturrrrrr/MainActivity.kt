@@ -51,7 +51,7 @@ data class Word(
 )
 
 
-object Dictionary {
+object lugat {
     val words = listOf(
 
         Word(1, "the", "bu, o'sha", "Umumiy"),
@@ -446,7 +446,7 @@ object Dictionary {
         Word(384, "family", "oila", "Oila"),
         Word(385, "person", "shaxs", "Oila"),
         Word(386, "student", "talaba", "Oila"),
-             // ---- Uy ----
+
     Word(387, "home", "uy", "Uy"), Word(388, "house", "hovli", "Uy"), Word(389, "room", "xona", "Uy"),
     Word(390, "kitchen", "oshxona", "Uy"), Word(391, "bedroom", "yotoqxona", "Uy"), Word(392, "bathroom", "yuvinish xonasi", "Uy"),
     Word(393, "toilet", "hojatxona", "Uy"), Word(394, "wall", "devor", "Uy"), Word(395, "floor", "pol", "Uy"),
@@ -458,7 +458,7 @@ object Dictionary {
     Word(411, "clock", "soat", "Uy"), Word(412, "key", "kalit", "Uy"), Word(413, "carpet", "gilam", "Uy"),
     Word(414, "curtain", "parda", "Uy"),
 
-    // ---- Transport va texnika ----
+
     Word(415, "car", "mashina", "Transport"), Word(416, "bus", "avtobus", "Transport"), Word(417, "train", "poyezd", "Transport"),
     Word(418, "plane", "samolyot", "Transport"), Word(419, "bicycle", "velosiped", "Transport"), Word(420, "truck", "yuk mashinasi", "Transport"),
     Word(421, "ship", "kema", "Transport"), Word(422, "boat", "qayiq", "Transport"), Word(423, "taxi", "taksi", "Transport"),
@@ -468,7 +468,7 @@ object Dictionary {
     Word(433, "phone", "telefon", "Transport"), Word(434, "paper", "qog'oz", "Transport"), Word(435, "pencil", "qalam", "Transport"),
     Word(436, "pen", "ruchka", "Transport"), Word(437, "notebook", "daftar", "Transport"), Word(438, "eraser", "o'chirg'ich", "Transport"),
 
-    // ---- Vaqt va sonlar ----
+
     Word(439, "second", "soniya", "Vaqt"), Word(440, "minute", "daqiqa", "Vaqt"), Word(441, "hour", "soat", "Vaqt"),
     Word(442, "week", "hafta", "Vaqt"), Word(443, "month", "oy", "Vaqt"), Word(444, "century", "asr", "Vaqt"),
     Word(445, "morning", "ertalab", "Vaqt"), Word(446, "afternoon", "tushlik", "Vaqt"), Word(447, "evening", "kechqurun", "Vaqt"),
@@ -498,7 +498,7 @@ object Dictionary {
     Word(513, "question", "savol", "Jamiyat"), Word(514, "answer", "javob", "Jamiyat"), Word(515, "reason", "sabab", "Jamiyat"),
     Word(516, "difference", "farq", "Jamiyat"),
 
-    // ---- Kasblar ----
+
     Word(517, "doctor", "shifokor", "Kasb"), Word(518, "nurse", "hamshira", "Kasb"), Word(519, "teacher", "o'qituvchi", "Kasb"),
     Word(520, "engineer", "muhandis", "Kasb"), Word(521, "lawyer", "advokat", "Kasb"), Word(522, "artist", "rassom", "Kasb"),
     Word(523, "writer", "yozuvchi", "Kasb"), Word(524, "pilot", "uchuvchi", "Kasb"), Word(525, "driver", "haydovchi", "Kasb"),
@@ -506,10 +506,537 @@ object Dictionary {
     Word(529, "cook", "oshpaz", "Kasb"), Word(530, "manager", "menejer", "Kasb"), Word(531, "secretary", "kotib", "Kasb"),
     Word(532, "worker", "ishchi", "Kasb"),
 
-    // ---- Salomlashish ----
+
     Word(533, "hello", "salom", "Salomlashish"), Word(534, "goodbye", "xayr", "Salomlashish"), Word(535, "please", "iltimos", "Salomlashish"),
     Word(536, "thanks", "rahmat", "Salomlashish"), Word(537, "sorry", "kechirasiz", "Salomlashish"), Word(538, "yes", "ha", "Salomlashish"),
-    Word(539, "maybe", "balki", "Salomlashish")
+    Word(539, "maybe", "balki", "Salomlashish"),
+
+        Word(540, "application", "ilova", "Texnologiya"),
+        Word(541, "software", "dasturiy ta'minot", "Texnologiya"),
+        Word(542, "hardware", "qurilma", "Texnologiya"),
+        Word(543, "database", "ma'lumotlar bazasi", "Texnologiya"),
+        Word(544, "server", "server", "Texnologiya"),
+        Word(545, "client", "mijoz", "Texnologiya"),
+        Word(546, "network", "tarmoq", "Texnologiya"),
+        Word(547, "website", "veb-sayt", "Texnologiya"),
+        Word(548, "browser", "brauzer", "Texnologiya"),
+        Word(549, "password", "parol", "Texnologiya"),
+        Word(550, "username", "foydalanuvchi nomi", "Texnologiya"),
+        Word(551, "account", "hisob", "Texnologiya"),
+        Word(552, "download", "yuklab olmoq", "Texnologiya"),
+        Word(553, "upload", "yuklamoq", "Texnologiya"),
+        Word(554, "install", "o'rnatmoq", "Texnologiya"),
+        Word(555, "update", "yangilamoq", "Texnologiya"),
+        Word(556, "delete", "o'chirmoq", "Texnologiya"),
+        Word(557, "search", "qidirmoq", "Texnologiya"),
+        Word(558, "file", "fayl", "Texnologiya"),
+        Word(559, "folder", "papka", "Texnologiya"),
+
+
+        Word(560, "school", "maktab", "Ta'lim"),
+        Word(561, "university", "universitet", "Ta'lim"),
+        Word(562, "lesson", "dars", "Ta'lim"),
+        Word(563, "homework", "uy vazifasi", "Ta'lim"),
+        Word(564, "exam", "imtihon", "Ta'lim"),
+        Word(565, "test", "test", "Ta'lim"),
+        Word(566, "grade", "baho", "Ta'lim"),
+        Word(567, "subject", "fan", "Ta'lim"),
+        Word(568, "classroom", "sinf xonasi", "Ta'lim"),
+        Word(569, "library", "kutubxona", "Ta'lim"),
+        Word(570, "dictionary", "lug'at", "Ta'lim"),
+        Word(571, "grammar", "grammatika", "Ta'lim"),
+        Word(572, "pronunciation", "talaffuz", "Ta'lim"),
+        Word(573, "translation", "tarjima", "Ta'lim"),
+        Word(574, "exercise", "mashq", "Ta'lim"),
+        Word(575, "certificate", "sertifikat", "Ta'lim"),
+        Word(576, "course", "kurs", "Ta'lim"),
+        Word(577, "education", "ta'lim", "Ta'lim"),
+        Word(578, "knowledge", "bilim", "Ta'lim"),
+        Word(579, "skill", "ko'nikma", "Ta'lim"),
+
+
+        Word(580, "business", "biznes", "Biznes"),
+        Word(581, "company", "kompaniya", "Biznes"),
+        Word(582, "customer", "mijoz", "Biznes"),
+        Word(583, "employee", "xodim", "Biznes"),
+        Word(584, "salary", "maosh", "Biznes"),
+        Word(585, "profit", "foyda", "Biznes"),
+        Word(586, "loss", "zarar", "Biznes"),
+        Word(587, "budget", "byudjet", "Biznes"),
+        Word(588, "bank", "bank", "Biznes"),
+        Word(589, "payment", "to'lov", "Biznes"),
+        Word(590, "invoice", "hisob-faktura", "Biznes"),
+        Word(591, "contract", "shartnoma", "Biznes"),
+        Word(592, "project", "loyiha", "Biznes"),
+        Word(593, "meeting", "uchrashuv", "Biznes"),
+        Word(594, "leader", "rahbar", "Biznes"),
+        Word(595, "team", "jamoa", "Biznes"),
+        Word(596, "goal", "maqsad", "Biznes"),
+        Word(597, "successfully", "muvaffaqiyatli", "Biznes"),
+        Word(598, "career", "kasbiy faoliyat", "Biznes"),
+        Word(599, "interview", "suhbat", "Biznes"),
+
+
+        Word(600, "hospital", "shifoxona", "Tibbiyot"),
+        Word(601, "patient", "bemor", "Tibbiyot"),
+        Word(602, "clinic", "klinika", "Tibbiyot"),
+        Word(603, "operation", "jarrohlik amaliyoti", "Tibbiyot"),
+        Word(604, "infection", "infeksiya", "Tibbiyot"),
+        Word(605, "virus", "virus", "Tibbiyot"),
+        Word(606, "bacteria", "bakteriya", "Tibbiyot"),
+        Word(607, "fever", "isitma", "Tibbiyot"),
+        Word(608, "cough", "yo'tal", "Tibbiyot"),
+        Word(609, "headache", "bosh og'rig'i", "Tibbiyot"),
+        Word(610, "stomach", "oshqozon", "Tibbiyot"),
+        Word(611, "heart", "yurak", "Tibbiyot"),
+        Word(612, "lung", "o'pka", "Tibbiyot"),
+        Word(613, "blood", "qon", "Tibbiyot"),
+        Word(614, "bone", "suyak", "Tibbiyot"),
+        Word(615, "skin", "teri", "Tibbiyot"),
+        Word(616, "tooth", "tish", "Tibbiyot"),
+        Word(617, "eye", "ko'z", "Tibbiyot"),
+        Word(618, "ear", "quloq", "Tibbiyot"),
+        Word(619, "shoulder", "yelka", "Tibbiyot"),
+
+
+        Word(620, "football", "futbol", "Sport"),
+        Word(621, "basketball", "basketbol", "Sport"),
+        Word(622, "volleyball", "voleybol", "Sport"),
+        Word(623, "tennis", "tennis", "Sport"),
+        Word(624, "swimmer", "suzuvchi", "Sport"),
+        Word(625, "runner", "yuguruvchi", "Sport"),
+        Word(626, "coach", "murabbiy", "Sport"),
+        Word(627, "captain", "kapitan", "Sport"),
+        Word(628, "stadium", "stadion", "Sport"),
+        Word(629, "champion", "chempion", "Sport"),
+        Word(630, "competition", "musobaqa", "Sport"),
+        Word(631, "medal", "medal", "Sport"),
+        Word(632, "gold", "oltin medal", "Sport"),
+        Word(633, "silver", "kumush medal", "Sport"),
+        Word(634, "bronze", "bronza medal", "Sport"),
+        Word(635, "score", "hisob", "Sport"),
+        Word(636, "goalkeeper", "darvozabon", "Sport"),
+        Word(637, "referee", "hakam", "Sport"),
+        Word(638, "winner", "g'olib", "Sport"),
+        Word(639, "loser", "mag'lub", "Sport"),
+
+
+        Word(640, "passport", "pasport", "Sayohat"),
+        Word(641, "visa", "viza", "Sayohat"),
+        Word(642, "tourist", "sayyoh", "Sayohat"),
+        Word(643, "journey", "safar", "Sayohat"),
+        Word(644, "trip", "sayohat", "Sayohat"),
+        Word(645, "hotel", "mehmonxona", "Sayohat"),
+        Word(646, "reservation", "bron qilish", "Sayohat"),
+        Word(647, "luggage", "yuk", "Sayohat"),
+        Word(648, "suitcase", "chamadon", "Sayohat"),
+        Word(649, "map", "xarita", "Sayohat"),
+        Word(650, "guide", "gid", "Sayohat"),
+        Word(651, "destination", "manzil", "Sayohat"),
+        Word(652, "arrival", "yetib kelish", "Sayohat"),
+        Word(653, "departure", "jo'nab ketish", "Sayohat"),
+        Word(654, "flight", "parvoz", "Sayohat"),
+        Word(655, "platform", "platforma", "Sayohat"),
+        Word(656, "subway", "metro", "Sayohat"),
+        Word(657, "harbor", "bandargoh", "Sayohat"),
+        Word(658, "border", "chegara", "Sayohat"),
+        Word(659, "customs", "bojxona", "Sayohat"),
+
+
+        Word(660, "science", "fan", "Fan"),
+        Word(661, "physics", "fizika", "Fan"),
+        Word(662, "chemistry", "kimyo", "Fan"),
+        Word(663, "biology", "biologiya", "Fan"),
+        Word(664, "mathematics", "matematika", "Fan"),
+        Word(665, "astronomy", "astronomiya", "Fan"),
+        Word(666, "planet", "sayyora", "Fan"),
+        Word(667, "galaxy", "galaktika", "Fan"),
+        Word(668, "universe", "koinot", "Fan"),
+        Word(669, "gravity", "tortishish kuchi", "Fan"),
+        Word(670, "energy", "energiya", "Fan"),
+        Word(671, "electricity", "elektr", "Fan"),
+        Word(672, "magnet", "magnit", "Fan"),
+        Word(673, "atom", "atom", "Fan"),
+        Word(674, "molecule", "molekula", "Fan"),
+        Word(675, "element", "element", "Fan"),
+        Word(676, "experiment", "tajriba", "Fan"),
+        Word(677, "research", "tadqiqot", "Fan"),
+        Word(678, "laboratory", "laboratoriya", "Fan"),
+        Word(679, "scientist", "olim", "Fan"),
+
+
+        Word(680, "emotion", "hissiyot", "His-tuyg'u"),
+        Word(681, "happiness", "baxt", "His-tuyg'u"),
+        Word(682, "sadness", "xafalik", "His-tuyg'u"),
+        Word(683, "anger", "g'azab", "His-tuyg'u"),
+        Word(684, "joy", "quvonch", "His-tuyg'u"),
+        Word(685, "excitement", "hayajon", "His-tuyg'u"),
+        Word(686, "surprise", "hayrat", "His-tuyg'u"),
+        Word(687, "trust", "ishonch", "His-tuyg'u"),
+        Word(688, "respect", "hurmat", "His-tuyg'u"),
+        Word(689, "pride", "faxr", "His-tuyg'u"),
+        Word(690, "shame", "uyat", "His-tuyg'u"),
+        Word(691, "envy", "hasad", "His-tuyg'u"),
+        Word(692, "stress", "stress", "His-tuyg'u"),
+        Word(693, "calm", "xotirjamlik", "His-tuyg'u"),
+        Word(694, "confidence", "ishonchlilik", "His-tuyg'u"),
+        Word(695, "kindness", "mehribonlik", "His-tuyg'u"),
+        Word(696, "patience", "sabr", "His-tuyg'u"),
+        Word(697, "bravery", "jasorat", "His-tuyg'u"),
+        Word(698, "honesty", "halollik", "His-tuyg'u"),
+        Word(699, "loyalty", "sadoqat", "His-tuyg'u"),
+
+
+        Word(700, "shirt", "ko'ylak", "Kiyim"),
+        Word(701, "trousers", "shim", "Kiyim"),
+        Word(702, "jacket", "kurtka", "Kiyim"),
+        Word(703, "coat", "palto", "Kiyim"),
+        Word(704, "dress", "ko'ylak", "Kiyim"),
+        Word(705, "skirt", "yubka", "Kiyim"),
+        Word(706, "socks", "paypoq", "Kiyim"),
+        Word(707, "shoes", "poyabzal", "Kiyim"),
+        Word(708, "boots", "etik", "Kiyim"),
+        Word(709, "hat", "shlyapa", "Kiyim"),
+        Word(710, "cap", "kepka", "Kiyim"),
+        Word(711, "gloves", "qo'lqop", "Kiyim"),
+        Word(712, "scarf", "sharf", "Kiyim"),
+        Word(713, "belt", "kamar", "Kiyim"),
+        Word(714, "wallet", "hamyon", "Kiyim"),
+        Word(715, "pocket", "cho'ntak", "Kiyim"),
+        Word(716, "button", "tugma", "Kiyim"),
+        Word(717, "zipper", "zamok", "Kiyim"),
+        Word(718, "uniform", "forma", "Kiyim"),
+        Word(719, "jewelry", "taqinchoq", "Kiyim"),
+
+
+        Word(720, "plate", "likopcha", "Oshxona"),
+        Word(721, "bowl", "kosa", "Oshxona"),
+        Word(722, "cup", "chashka", "Oshxona"),
+        Word(723, "glass", "stakan", "Oshxona"),
+        Word(724, "spoon", "qoshiq", "Oshxona"),
+        Word(725, "fork", "sanchqi", "Oshxona"),
+        Word(726, "knife", "pichoq", "Oshxona"),
+        Word(727, "pan", "tova", "Oshxona"),
+        Word(728, "pot", "qozon", "Oshxona"),
+        Word(729, "kettle", "choynak", "Oshxona"),
+        Word(730, "oven", "pech", "Oshxona"),
+        Word(731, "refrigerator", "muzlatgich", "Oshxona"),
+        Word(732, "freezer", "muzxona", "Oshxona"),
+        Word(733, "stove", "plita", "Oshxona"),
+        Word(734, "recipe", "retsept", "Oshxona"),
+        Word(735, "ingredient", "masalliq", "Oshxona"),
+        Word(736, "flour", "un", "Oshxona"),
+        Word(737, "pepper", "murch", "Oshxona"),
+        Word(738, "oil", "yog'", "Oshxona"),
+        Word(739, "vinegar", "sirka", "Oshxona"),
+
+
+        Word(740, "color", "rang", "Rang"),
+        Word(741, "red", "qizil", "Rang"),
+        Word(742, "blue", "ko'k", "Rang"),
+        Word(743, "green", "yashil", "Rang"),
+        Word(744, "yellow", "sariq", "Rang"),
+        Word(745, "black", "qora", "Rang"),
+        Word(746, "white", "oq", "Rang"),
+        Word(747, "brown", "jigarrang", "Rang"),
+        Word(748, "pink", "pushti", "Rang"),
+        Word(749, "purple", "binafsha", "Rang"),
+        Word(750, "gray", "kulrang", "Rang"),
+        Word(751, "golden", "oltinrang", "Rang"),
+        Word(752, "gold", "oltin", "Rang"),
+        Word(753, "silver", "kumush", "Rang"),
+        Word(754, "orangecolor", "to'q sariq", "Rang"),
+        Word(755, "violet", "siyohrang", "Rang"),
+        Word(756, "navy", "to'q ko'k", "Rang"),
+        Word(757, "turquoise", "feruza", "Rang"),
+        Word(758, "beige", "bej", "Rang"),
+        Word(759, "maroon", "to'q qizil", "Rang"),
+
+
+        Word(760, "continent", "qit'a", "Geografiya"),
+        Word(761, "island", "orol", "Geografiya"),
+        Word(762, "desert", "cho'l", "Geografiya"),
+        Word(763, "jungle", "changalzor", "Geografiya"),
+        Word(764, "volcano", "vulqon", "Geografiya"),
+        Word(765, "waterfall", "sharshara", "Geografiya"),
+        Word(766, "cliff", "qoya", "Geografiya"),
+        Word(767, "cave", "g'or", "Geografiya"),
+        Word(768, "coast", "sohil", "Geografiya"),
+        Word(769, "beach", "plyaj", "Geografiya"),
+        Word(770, "harvest", "hosil", "Geografiya"),
+        Word(771, "field", "dala", "Geografiya"),
+        Word(772, "farm", "ferma", "Geografiya"),
+        Word(773, "stream", "soy", "Geografiya"),
+        Word(774, "branch", "shox", "Geografiya"),
+        Word(775, "leaf", "barg", "Geografiya"),
+        Word(776, "root", "ildiz", "Geografiya"),
+        Word(777, "seed", "urug'", "Geografiya"),
+        Word(778, "crop", "ekin", "Geografiya"),
+        Word(779, "nature", "tabiat", "Geografiya"),
+
+
+        Word(780, "nose", "burun", "Tana"),
+        Word(781, "mouth", "og'iz", "Tana"),
+        Word(782, "lip", "lab", "Tana"),
+        Word(783, "tongue", "til", "Tana"),
+        Word(784, "chin", "iyak", "Tana"),
+        Word(785, "cheek", "yonoq", "Tana"),
+        Word(786, "forehead", "peshona", "Tana"),
+        Word(787, "neck", "bo'yin", "Tana"),
+        Word(788, "arm", "qo'l", "Tana"),
+        Word(789, "elbow", "tirsak", "Tana"),
+        Word(790, "wrist", "bilak", "Tana"),
+        Word(791, "finger", "barmoq", "Tana"),
+        Word(792, "thumb", "bosh barmoq", "Tana"),
+        Word(793, "leg", "oyoq", "Tana"),
+        Word(794, "knee", "tizza", "Tana"),
+        Word(795, "ankle", "to'piq", "Tana"),
+        Word(796, "foot", "oyoq panjasi", "Tana"),
+        Word(797, "toe", "oyoq barmog'i", "Tana"),
+        Word(798, "backbone", "umurtqa pog'onasi", "Tana"),
+        Word(799, "brain", "miya", "Tana"),
+
+
+        Word(800, "printer", "printer", "Ofis"),
+        Word(801, "scanner", "skaner", "Ofis"),
+        Word(802, "document", "hujjat", "Ofis"),
+        Word(803, "report", "hisobot", "Ofis"),
+        Word(804, "presentation", "taqdimot", "Ofis"),
+        Word(805, "calendar", "kalendar", "Ofis"),
+        Word(806, "schedule", "jadval", "Ofis"),
+        Word(807, "appointment", "uchrashuv vaqti", "Ofis"),
+        Word(808, "signature", "imzo", "Ofis"),
+        Word(809, "stamp", "muhr", "Ofis"),
+        Word(810, "envelope", "konvert", "Ofis"),
+        Word(811, "package", "posilka", "Ofis"),
+        Word(812, "parcel", "jo'natma", "Ofis"),
+        Word(813, "clipboard", "planshet", "Ofis"),
+        Word(814, "calculator", "kalkulyator", "Ofis"),
+        Word(815, "marker", "marker", "Ofis"),
+        Word(816, "highlighter", "marker-qalam", "Ofis"),
+        Word(817, "foldercase", "papka-jild", "Ofis"),
+        Word(818, "drawer", "tortma", "Ofis"),
+        Word(819, "cabinet", "shkaf", "Ofis"),
+
+
+        Word(820, "email", "elektron pochta", "Internet"),
+        Word(821, "message", "xabar", "Internet"),
+        Word(822, "notification", "bildirishnoma", "Internet"),
+        Word(823, "profile", "profil", "Internet"),
+        Word(824, "settings", "sozlamalar", "Internet"),
+        Word(825, "privacy", "maxfiylik", "Internet"),
+        Word(826, "security", "xavfsizlik", "Internet"),
+        Word(827, "backup", "zaxira nusxa", "Internet"),
+        Word(828, "cloudstorage", "bulutli saqlash", "Internet"),
+        Word(829, "link", "havola", "Internet"),
+        Word(830, "websitepage", "veb-sahifa", "Internet"),
+        Word(831, "homepage", "bosh sahifa", "Internet"),
+        Word(832, "menu", "menyu", "Internet"),
+        Word(833, "button", "tugma", "Internet"),
+        Word(834, "icon", "belgi", "Internet"),
+        Word(835, "cursor", "kursor", "Internet"),
+        Word(836, "click", "bosish", "Internet"),
+        Word(837, "scroll", "aylantirish", "Internet"),
+        Word(838, "refresh", "yangilash", "Internet"),
+        Word(839, "logout", "hisobdan chiqish", "Internet"),
+
+
+        Word(840, "currency", "valyuta", "Moliya"),
+        Word(841, "coin", "tanga", "Moliya"),
+        Word(842, "cash", "naqd pul", "Moliya"),
+        Word(843, "credit", "kredit", "Moliya"),
+        Word(844, "debit", "debet", "Moliya"),
+        Word(845, "investment", "investitsiya", "Moliya"),
+        Word(846, "insurance", "sug'urta", "Moliya"),
+        Word(847, "receipt", "chek", "Moliya"),
+        Word(848, "discount", "chegirma", "Moliya"),
+        Word(849, "expense", "xarajat", "Moliya"),
+        Word(850, "income", "daromad", "Moliya"),
+        Word(851, "tax", "soliq", "Moliya"),
+        Word(852, "wealth", "boylik", "Moliya"),
+        Word(853, "poverty", "kambag'allik", "Moliya"),
+        Word(854, "rent", "ijara", "Moliya"),
+        Word(855, "mortgage", "ipoteka", "Moliya"),
+        Word(856, "purchase", "xarid", "Moliya"),
+        Word(857, "refund", "pulni qaytarish", "Moliya"),
+        Word(858, "checkout", "hisob-kitob", "Moliya"),
+        Word(859, "walletapp", "elektron hamyon", "Moliya"),
+
+
+        Word(860, "song", "qo'shiq", "Musiqa"),
+        Word(861, "melody", "ohang", "Musiqa"),
+        Word(862, "rhythm", "ritm", "Musiqa"),
+        Word(863, "guitar", "gitara", "Musiqa"),
+        Word(864, "piano", "pianino", "Musiqa"),
+        Word(865, "violin", "skripka", "Musiqa"),
+        Word(866, "drum", "baraban", "Musiqa"),
+        Word(867, "flute", "nay", "Musiqa"),
+        Word(868, "microphone", "mikrofon", "Musiqa"),
+        Word(869, "speaker", "karnay", "Musiqa"),
+        Word(870, "headphones", "quloqchin", "Musiqa"),
+        Word(871, "concert", "konsert", "Musiqa"),
+        Word(872, "band", "musiqa guruhi", "Musiqa"),
+        Word(873, "album", "albom", "Musiqa"),
+        Word(874, "chorus", "naqorat", "Musiqa"),
+        Word(875, "verse", "band", "Musiqa"),
+        Word(876, "composer", "bastakor", "Musiqa"),
+        Word(877, "musician", "musiqachi", "Musiqa"),
+        Word(878, "orchestra", "orkestr", "Musiqa"),
+        Word(879, "performance", "ijro", "Musiqa"),
+
+
+        Word(880, "temperature", "harorat", "Ob-havo"),
+        Word(881, "forecast", "ob-havo ma'lumoti", "Ob-havo"),
+        Word(882, "humidity", "namlik", "Ob-havo"),
+        Word(883, "fog", "tuman", "Ob-havo"),
+        Word(884, "lightning", "chaqmoq", "Ob-havo"),
+        Word(885, "thunder", "momaqaldiroq", "Ob-havo"),
+        Word(886, "breeze", "shabada", "Ob-havo"),
+        Word(887, "climate", "iqlim", "Ob-havo"),
+        Word(888, "season", "fasl", "Ob-havo"),
+        Word(889, "spring", "bahor", "Ob-havo"),
+        Word(890, "summer", "yoz", "Ob-havo"),
+        Word(891, "autumn", "kuz", "Ob-havo"),
+        Word(892, "winter", "qish", "Ob-havo"),
+        Word(893, "sunshine", "quyosh nuri", "Ob-havo"),
+        Word(894, "rainbow", "kamalak", "Ob-havo"),
+        Word(895, "drought", "qurg'oqchilik", "Ob-havo"),
+        Word(896, "flood", "suv toshqini", "Ob-havo"),
+        Word(897, "hail", "do'l", "Ob-havo"),
+        Word(898, "mist", "yengil tuman", "Ob-havo"),
+        Word(899, "forecasting", "ob-havoni bashorat qilish", "Ob-havo"),
+
+
+        Word(900, "government", "hukumat", "Huquq"),
+        Word(901, "president", "prezident", "Huquq"),
+        Word(902, "minister", "vazir", "Huquq"),
+        Word(903, "parliament", "parlament", "Huquq"),
+        Word(904, "constitution", "konstitutsiya", "Huquq"),
+        Word(905, "citizen", "fuqaro", "Huquq"),
+        Word(906, "passportholder", "pasport egasi", "Huquq"),
+        Word(907, "justice", "adolat", "Huquq"),
+        Word(908, "judge", "sudya", "Huquq"),
+        Word(909, "court", "sud", "Huquq"),
+        Word(910, "crime", "jinoyat", "Huquq"),
+        Word(911, "criminal", "jinoyatchi", "Huquq"),
+        Word(912, "prison", "qamoqxona", "Huquq"),
+        Word(913, "prisoner", "mahbus", "Huquq"),
+        Word(914, "evidence", "dalil", "Huquq"),
+        Word(915, "witness", "guvoh", "Huquq"),
+        Word(916, "rights", "huquqlar", "Huquq"),
+        Word(917, "freedom", "erkinlik", "Huquq"),
+        Word(918, "election", "saylov", "Huquq"),
+        Word(919, "vote", "ovoz berish", "Huquq"),
+
+
+        Word(920, "brick", "g'isht", "Qurilish"),
+        Word(921, "cement", "sement", "Qurilish"),
+        Word(922, "concrete", "beton", "Qurilish"),
+        Word(923, "steel", "po'lat", "Qurilish"),
+        Word(924, "wood", "yog'och", "Qurilish"),
+        Word(925, "pipe", "quvur", "Qurilish"),
+        Word(926, "hammer", "bolg'a", "Qurilish"),
+        Word(927, "nail", "mix", "Qurilish"),
+        Word(928, "screw", "burama mix", "Qurilish"),
+        Word(929, "ladder", "narvon", "Qurilish"),
+        Word(930, "paint", "bo'yoq", "Qurilish"),
+        Word(931, "brush", "cho'tka", "Qurilish"),
+        Word(932, "tile", "kafel", "Qurilish"),
+        Word(933, "marble", "marmar", "Qurilish"),
+        Word(934, "glasswall", "shisha devor", "Qurilish"),
+        Word(935, "balcony", "balkon", "Qurilish"),
+        Word(936, "garage", "garaj", "Qurilish"),
+        Word(937, "elevator", "lift", "Qurilish"),
+        Word(938, "corridor", "yo'lak", "Qurilish"),
+        Word(939, "foundation", "poydevor", "Qurilish"),
+
+
+        Word(940, "rocket", "raketa", "Kosmos"),
+        Word(941, "satellite", "sun'iy yo'ldosh", "Kosmos"),
+        Word(942, "spaceship", "kosmik kema", "Kosmos"),
+        Word(943, "astronaut", "astronavt", "Kosmos"),
+        Word(944, "orbit", "orbita", "Kosmos"),
+        Word(945, "telescope", "teleskop", "Kosmos"),
+        Word(946, "comet", "kometa", "Kosmos"),
+        Word(947, "asteroid", "asteroid", "Kosmos"),
+        Word(948, "meteor", "meteor", "Kosmos"),
+        Word(949, "eclipse", "tutilish", "Kosmos"),
+        Word(950, "constellation", "yulduz turkumi", "Kosmos"),
+        Word(951, "blackhole", "qora tuynuk", "Kosmos"),
+        Word(952, "spacesuit", "kosmik skafandr", "Kosmos"),
+        Word(953, "launch", "uchirish", "Kosmos"),
+        Word(954, "mission", "missiya", "Kosmos"),
+        Word(955, "module", "modul", "Kosmos"),
+        Word(956, "probe", "zond", "Kosmos"),
+        Word(957, "cosmos", "kosmos", "Kosmos"),
+        Word(958, "spacecraft", "kosmik apparat", "Kosmos"),
+        Word(959, "observatory", "rasadxona", "Kosmos"),
+
+
+        Word(960, "programming", "dasturlash", "Dasturlash"),
+        Word(961, "algorithm", "algoritm", "Dasturlash"),
+        Word(962, "variable", "o'zgaruvchi", "Dasturlash"),
+        Word(963, "function", "funksiya", "Dasturlash"),
+        Word(964, "method", "metod", "Dasturlash"),
+        Word(965, "class", "klass", "Dasturlash"),
+        Word(966, "object", "obyekt", "Dasturlash"),
+        Word(967, "interface", "interfeys", "Dasturlash"),
+        Word(968, "inheritance", "meros olish", "Dasturlash"),
+        Word(969, "encapsulation", "inkapsulyatsiya", "Dasturlash"),
+        Word(970, "polymorphism", "polimorfizm", "Dasturlash"),
+        Word(971, "abstraction", "abstraksiya", "Dasturlash"),
+        Word(972, "exception", "istisno", "Dasturlash"),
+        Word(973, "debugging", "xatolarni tuzatish", "Dasturlash"),
+        Word(974, "compiler", "kompilyator", "Dasturlash"),
+        Word(975, "interpreter", "interpretator", "Dasturlash"),
+        Word(976, "framework", "freymvork", "Dasturlash"),
+        Word(977, "librarycode", "kutubxona", "Dasturlash"),
+        Word(978, "repository", "repozitoriy", "Dasturlash"),
+        Word(979, "versioncontrol", "versiyalar nazorati", "Dasturlash"),
+
+
+        Word(980, "battery", "batareya", "Elektronika"),
+        Word(981, "charger", "quvvatlagich", "Elektronika"),
+        Word(982, "adapter", "adapter", "Elektronika"),
+        Word(983, "socket", "rozetka", "Elektronika"),
+        Word(984, "switch", "o'chirgich", "Elektronika"),
+        Word(985, "cable", "kabel", "Elektronika"),
+        Word(986, "wire", "sim", "Elektronika"),
+        Word(987, "sensor", "sensor", "Elektronika"),
+        Word(988, "camera", "kamera", "Elektronika"),
+        Word(989, "lens", "linza", "Elektronika"),
+        Word(990, "monitor", "monitor", "Elektronika"),
+        Word(991, "television", "televizor", "Elektronika"),
+        Word(992, "remote", "masofadan boshqaruv", "Elektronika"),
+        Word(993, "router", "router", "Elektronika"),
+        Word(994, "modem", "modem", "Elektronika"),
+        Word(995, "signal", "signal", "Elektronika"),
+        Word(996, "antenna", "antenna", "Elektronika"),
+        Word(997, "chip", "mikrosxema", "Elektronika"),
+        Word(998, "processor", "protsessor", "Elektronika"),
+        Word(999, "memory", "xotira", "Elektronika"),
+
+
+        Word(1000, "artificialintelligence", "sun'iy intellekt", "AI"),
+        Word(1001, "machinelearning", "mashinaviy o'rganish", "AI"),
+        Word(1002, "neuralnetwork", "neyron tarmoq", "AI"),
+        Word(1003, "dataset", "ma'lumotlar to'plami", "AI"),
+        Word(1004, "prediction", "bashorat", "AI"),
+        Word(1005, "automation", "avtomatlashtirish", "AI"),
+        Word(1006, "robot", "robot", "AI"),
+        Word(1007, "android", "android", "AI"),
+        Word(1008, "applicationdeveloper", "ilova dasturchisi", "AI"),
+        Word(1009, "opensource", "ochiq manbali", "AI"),
+        Word(1010, "virtualreality", "virtual reallik", "AI"),
+        Word(1011, "augmentedreality", "kengaytirilgan reallik", "AI"),
+        Word(1012, "blockchain", "blokcheyn", "AI"),
+        Word(1013, "cryptography", "kriptografiya", "AI"),
+        Word(1014, "cybersecurity", "kiberxavfsizlik", "AI"),
+        Word(1015, "authentication", "autentifikatsiya", "AI"),
+        Word(1016, "authorization", "ruxsat berish", "AI"),
+        Word(1017, "encryption", "shifrlash", "AI"),
+        Word(1018, "decryption", "shifrni yechish", "AI"),
+        Word(1019, "firewall", "xavfsizlik devori", "AI"),
     )
 }
 
@@ -520,44 +1047,42 @@ class UserPreferences(context: Context) {
     private val prefs: SharedPreferences =
         context.getSharedPreferences("lugat_prefs", Context.MODE_PRIVATE)
 
-    fun isDarkMode(): Boolean = prefs.getBoolean(KEY_DARK_MODE, false)
-    fun setDarkMode(enabled: Boolean) = prefs.edit { putBoolean(KEY_DARK_MODE, enabled) }
+    fun qoronguMode(): Boolean = prefs.getBoolean(qorongu_mode, false)
+    fun qoronguMode2(enabled: Boolean) = prefs.edit { putBoolean(qorongu_mode, enabled) }
 
-    fun isSystemTheme(): Boolean = prefs.getBoolean(KEY_SYSTEM_THEME, true)
-    fun setSystemTheme(enabled: Boolean) = prefs.edit { putBoolean(KEY_SYSTEM_THEME, enabled) }
+    fun sistema(): Boolean = prefs.getBoolean(sistema_kaliti, true)
+    fun sistema2(enabled: Boolean) = prefs.edit { putBoolean(sistema_kaliti, enabled) }
 
-    fun getFontScale(): Float = prefs.getFloat(KEY_FONT_SCALE, 1f)
-    fun setFontScale(scale: Float) = prefs.edit { putFloat(KEY_FONT_SCALE, scale) }
+    fun yozuvkorinishi(): Float = prefs.getFloat(yozuv_kaliti, 1f)
+    fun yozuvkorinishi2(scale: Float) = prefs.edit { putFloat(yozuv_kaliti, scale) }
 
-    fun getFavoriteIds(): Set<Int> =
-        prefs.getStringSet(KEY_FAVORITES, emptySet())
+    fun yoqtirgan(): Set<Int> =
+        prefs.getStringSet(yoqtirgan_kaliti, emptySet())
             ?.mapNotNull { it.toIntOrNull() }
             ?.toSet() ?: emptySet()
 
-    fun setFavoriteIds(ids: Set<Int>) =
-        prefs.edit { putStringSet(KEY_FAVORITES, ids.map { it.toString() }.toSet()) }
+    fun yoqtirgan2(ids: Set<Int>) =
+        prefs.edit { putStringSet(yoqtirgan_kaliti, ids.map { it.toString() }.toSet()) }
 
-    fun getHistoryIds(): List<Int> =
-        prefs.getString(KEY_HISTORY, "")
+    fun tarix(): List<Int> =
+        prefs.getString(tarixi, "")
             ?.split(",")
             ?.filter { it.isNotBlank() }
             ?.mapNotNull { it.toIntOrNull() }
             ?: emptyList()
-     fun setHistoryIds(ids: List<Int>) =
-        prefs.edit { putString(KEY_HISTORY, ids.joinToString(",")) }
+     fun tarix2(ids: List<Int>) =
+        prefs.edit { putString(tarixi, ids.joinToString(",")) }
 
     companion object {
-        private const val KEY_DARK_MODE = "dark_mode"
-        private const val KEY_SYSTEM_THEME = "system_theme"
-        private const val KEY_FONT_SCALE = "font_scale"
-        private const val KEY_FAVORITES = "favorites"
-        private const val KEY_HISTORY = "history"
+        private const val qorongu_mode = "dark_mode"
+        private const val sistema_kaliti = "system_theme"
+        private const val yozuv_kaliti = "font_scale"
+        private const val yoqtirgan_kaliti = "favorites"
+        private const val tarixi = "history"
     }
 }
 
-// =========================================================================
-// 4) TALAFFUZ — Pronouncer.kt (TextToSpeech o'rami)
-// =========================================================================
+
 
 class Pronouncer(context: Context) : TextToSpeech.OnInitListener {
 
@@ -576,79 +1101,663 @@ class Pronouncer(context: Context) : TextToSpeech.OnInitListener {
         }
     }
 
-    fun speak(text: String) {
+    fun gapirish(text: String) {
         if (isReady) {
             tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "lugat_word")
         }
     }
 
-    fun shutdown() {
+    fun ogzini_yum() {
         tts?.stop()
         tts?.shutdown()
         tts = null
     }
 }
 
-// =========================================================================
-// 5) VIEWMODEL — AppViewModel.kt (butun ilova holati shu yerda)
-// =========================================================================
+
 
 class AppViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val prefs = UserPreferences(application)
-    private val pronouncer = Pronouncer(application)
+    private val birornima = UserPreferences(application)
+    private val talaffuz = Pronouncer(application)
 
-    val allWords: List<Word> = Dictionary.words
+    val hammasozlar: List<Word> = lugat.words
 
-    private val _favoriteIds = MutableStateFlow(prefs.getFavoriteIds())
-    val favoriteIds: StateFlow<Set<Int>> = _favoriteIds.asStateFlow()
+    private val _sevimli = MutableStateFlow(birornima.yoqtirgan())
+    val sevimli: StateFlow<Set<Int>> = _sevimli.asStateFlow()
 
-    private val _historyIds = MutableStateFlow(prefs.getHistoryIds())
-    val historyIds: StateFlow<List<Int>> = _historyIds.asStateFlow()
+    private val _historyds = MutableStateFlow(birornima.tarix())
+    val historyIds: StateFlow<List<Int>> = _historyds.asStateFlow()
 
-    private val _isDarkMode = MutableStateFlow(prefs.isDarkMode())
-    val isDarkMode: StateFlow<Boolean> = _isDarkMode.asStateFlow()
+    private val _DarkMode = MutableStateFlow(birornima.qoronguMode())
+    val DarkMode: StateFlow<Boolean> = _DarkMode.asStateFlow()
 
-    private val _followSystemTheme = MutableStateFlow(prefs.isSystemTheme())
-    val followSystemTheme: StateFlow<Boolean> = _followSystemTheme.asStateFlow()
+    private val _followSystem = MutableStateFlow(birornima.sistema())
+    val followSystem: StateFlow<Boolean> = _followSystem.asStateFlow()
 
-    private val _fontScale = MutableStateFlow(prefs.getFontScale())
-    val fontScale: StateFlow<Float> = _fontScale.asStateFlow()
+    private val _font = MutableStateFlow(birornima.yozuvkorinishi())
+    val fontScale: StateFlow<Float> = _font.asStateFlow()
 
     fun toggleFavorite(word: Word) {
-        val current = _favoriteIds.value.toMutableSet()
+        val current = _sevimli.value.toMutableSet()
         if (!current.add(word.id)) current.remove(word.id)
-        _favoriteIds.value = current
-        prefs.setFavoriteIds(current)
+        _sevimli.value = current
+        birornima.yoqtirgan2(current)
     }
 
     fun addToHistory(word: Word) {
-        val current = _historyIds.value.toMutableList()
+        val current = _historyds.value.toMutableList()
         current.remove(word.id)
         current.add(0, word.id)
         val trimmed = current.take(50)
-        _historyIds.value = trimmed
-        prefs.setHistoryIds(trimmed)
+        _historyds.value = trimmed
+        birornima.tarix2(trimmed)
     }
 
     fun clearHistory() {
-        _historyIds.value = emptyList()
-        prefs.setHistoryIds(emptyList())
+        _historyds.value = emptyList()
+        birornima.tarix2(emptyList())
     }
 
     fun pronounce(word: Word) {
         addToHistory(word)
-        pronouncer.speak(word.english)
+        talaffuz.gapirish(word.english)
     }
 
     fun setDarkMode(enabled: Boolean) {
-        _isDarkMode.value = enabled
-        prefs.setDarkMode(enabled)
+        _DarkMode.value = enabled
+        birornima.qoronguMode2(enabled)
     }
 
-    fun setFollowSystemTheme(enabled: Boolean) {
-        _followSystemTheme.value = enabled
-        prefs.setSystemTheme(enabled)
-    }}
+    fun FollowSystem(enabled: Boolean) {
+        _followSystem.value = enabled
+        birornima.sistema2(enabled)
+    }
+
+    fun setFontScale(scale: Float) {
+        _font.value = scale
+        birornima.yozuvkorinishi2(scale)
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        talaffuz.ogzini_yum()
+    }
+}
+
+
+
+sealed class Screen(val label: String, val icon: ImageVector) {
+    data object Home : Screen("Bosh sahifa", Icons.Default.Home)
+    data object Search : Screen("Qidiruv", Icons.Default.Search)
+    data object Favorites : Screen("Sevimlilar", Icons.Default.Favorite)
+    data object History : Screen("Tarix", Icons.Default.History)
+    data object Settings : Screen("Sozlamalar", Icons.Default.Settings)
+
+    companion object {
+        val narsalarr = listOf(Home, Search, Favorites, History, Settings)
+    }
+}
+
+
+
+val Primary = Color(0xFF4A6CF7)
+val PrimaryDark = Color(0xFF7C4DFF)
+val Accent = Color(0xFFFF5252)
+
+val LightBackground = Color(0xFFF8F9FD)
+val Light = Color(0xFFFFFFFF)
+val Variant = Color(0xFF6B7280)
+
+val Background = Color(0xFF121318)
+val DarkSurface = Color(0xFF1E1F26)
+val DarkOn = Color(0xFFA0A3AD)
+
+val ilovaa = Typography(
+    titleLarge = TextStyle(fontWeight = FontWeight.Bold, fontSize = 24.sp),
+    titleMedium = TextStyle(fontWeight = FontWeight.Bold, fontSize = 18.sp),
+    bodyLarge = TextStyle(fontWeight = FontWeight.Normal, fontSize = 16.sp),
+    bodyMedium = TextStyle(fontWeight = FontWeight.Normal, fontSize = 14.sp),
+    labelSmall = TextStyle(fontWeight = FontWeight.Medium, fontSize = 11.sp)
+)
+
+private val yorqin = lightColorScheme(
+    primary = Primary,
+    secondary = PrimaryDark,
+    background = LightBackground,
+    surface = Light,
+    onSurfaceVariant = Variant
+)
+
+private val DarkColors = darkColorScheme(
+    primary = Primary,
+    secondary = PrimaryDark,
+    background = Background,
+    surface = DarkSurface,
+    onSurfaceVariant = DarkOn
+)
+
+@Composable
+fun Lugatdasturr(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit
+) {
+    val colorScheme = if (darkTheme) DarkColors else yorqin
+    MaterialTheme(colorScheme = colorScheme, typography = ilovaa, content = content)
+}
+
+
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            val viewModel: AppViewModel = viewModel()
+            val isDarkMode by viewModel.DarkMode.collectAsState()
+            val followSystem by viewModel.followSystem.collectAsState()
+            val systemInDark = isSystemInDarkTheme()
+
+            Lugatdasturr(darkTheme = if (followSystem) systemInDark else isDarkMode) {
+                ilovaniboshi(viewModel)
+            }
+        }
+    }
+}@Composable
+fun ilovaniboshi(viewModel: AppViewModel) {
+    var selected by remember { mutableIntStateOf(0) }
+     Scaffold(
+    bottomBar = {
+        NavigationBar {
+            Screen.narsalarr.forEachIndexed { index, screen ->
+                NavigationBarItem(
+                    selected = selected == index,
+                    onClick = { selected = index },
+                    icon = { Icon(screen.icon, contentDescription = screen.label) },
+                    label = { Text(screen.label, fontSize = 10.sp) }
+                )
+            }
+        }
+    }
+    ) { padding ->
+        Box(modifier = Modifier.padding(padding)) {
+            when (selected) {
+                0 -> asosiyekran(viewModel)
+                1 -> qidiruvoynasi(viewModel)
+                2 -> sevimlilarbolimi(viewModel)
+                3 -> tarixekran(viewModel)
+                4 -> sozlamaekrani(viewModel)
+            }
+        }
+    }
+}
+
+
+
+@Composable
+fun sozkartasi(
+    word: Word,
+    isFavorite: Boolean,
+    onWordClick: () -> Unit,
+    onFavoriteClick: () -> Unit,
+    onSpeakClick: () -> Unit
+) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 6.dp)
+            .clickable { onWordClick() },
+        shape = RoundedCornerShape(18.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(46.dp)
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.primaryContainer)
+                    .clickable { onSpeakClick() },
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = Icons.Filled.VolumeUp,
+                    contentDescription = "Talaffuz qilish",
+                    tint = MaterialTheme.colorScheme.primary
+                )
+            }
+
+            Spacer(modifier = Modifier.width(14.dp))
+
+            Column(modifier = Modifier.weight(1f)) {
+                Text(text = word.english, fontWeight = FontWeight.Bold, fontSize = 17.sp)
+                Spacer(modifier = Modifier.height(2.dp))
+                Text(
+                    text = word.uzbek,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    fontSize = 14.sp
+                )
+            }
+
+            IconButton(onClick = { onFavoriteClick() }) {
+                Icon(
+                    imageVector = if (isFavorite) Icons.Filled.Favorite else Icons.Outlined.FavoriteBorder,
+                    contentDescription = "Sevimli",
+                    tint = if (isFavorite) Color(0xFFFF5252) else MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        }
+    }
+}
+
+
+
+@Composable
+fun asosiyekran(viewModel: AppViewModel) {
+    val favoriteIds by viewModel.sevimli.collectAsState()
+    val wordOfTheDay = remember { viewModel.hammasozlar.random() }
+
+    LazyColumn(
+        modifier = Modifier .fillMaxSize()
+    .padding(horizontal = 18.dp)
+    ) {
+        item {
+            Spacer(Modifier.height(20.dp))
+
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Column(Modifier.weight(1f)) {
+                    Text("Lug'at", fontSize = 32.sp, fontWeight = FontWeight.Bold)
+                    Text(
+                        "Bilim — eng katta boylik \uD83D\uDCD6",
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        fontSize = 13.sp
+                    )
+                }
+                Icon(Icons.Filled.EmojiEvents, contentDescription = null, tint = Color(0xFFFFB300))
+            }
+
+            Spacer(Modifier.height(20.dp))
+
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(170.dp),
+                shape = RoundedCornerShape(24.dp)
+            ) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(
+                            Brush.linearGradient(listOf(Color(0xFF4A6CF7), Color(0xFF7C4DFF)))
+                        )
+                        .padding(20.dp)
+                ) {
+                    Column(
+                        modifier = Modifier.fillMaxSize(),
+                        verticalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Column {
+                            Text("\uD83D\uDCD6 Bugungi so'z", color = Color.White, fontSize = 15.sp)
+                            Spacer(Modifier.height(10.dp))
+                            Text(
+                                wordOfTheDay.english,
+                                color = Color.White,
+                                fontSize = 28.sp,
+                                fontWeight = FontWeight.Bold
+                            )
+                            Spacer(Modifier.height(4.dp))
+                            Text(
+                                wordOfTheDay.uzbek,
+                                color = Color.White.copy(alpha = .9f),
+                                fontSize = 17.sp
+                            )
+                        }
+                        Button(
+                            onClick = { viewModel.pronounce(wordOfTheDay) },
+                            colors = ButtonDefaults.buttonColors(containerColor = Color.White)
+                        ) {
+                            Icon(Icons.Filled.VolumeUp, contentDescription = null, tint = Color(0xFF4A6CF7))
+                            Spacer(Modifier.width(6.dp))
+                            Text("Tinglash", color = Color(0xFF4A6CF7))
+                        }
+                    }
+                }
+            }
+
+            Spacer(Modifier.height(24.dp))
+            Text(
+                "Barcha so'zlar (${viewModel.hammasozlar.size})",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(Modifier.height(10.dp))
+        }
+
+        items(viewModel.hammasozlar, key = { it.id }) { word ->
+            sozkartasi(
+                word = word,
+                isFavorite = favoriteIds.contains(word.id),
+                onWordClick = { viewModel.pronounce(word) },
+                onFavoriteClick = { viewModel.toggleFavorite(word) },
+                onSpeakClick = { viewModel.pronounce(word) }
+            )
+        }
+
+        item { Spacer(Modifier.height(24.dp)) }
+    }
+}
+
+
+
+@Composable
+fun qidiruvoynasi(viewModel: AppViewModel) {
+    var query by remember { mutableStateOf("") }
+    val favoriteIds by viewModel.sevimli.collectAsState()
+     val results = remember(query) {
+        if (query.isBlank()) {
+            viewModel.hammasozlar
+        } else {
+            viewModel.hammasozlar.filter {
+                it.english.contains(query, ignoreCase = true) ||
+                        it.uzbek.contains(query, ignoreCase = true)
+            }
+        }
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 18.dp)
+    ) {
+        Spacer(Modifier.height(20.dp))
+        Text("Qidiruv", fontSize = 26.sp, fontWeight = FontWeight.Bold)
+        Spacer(Modifier.height(16.dp))
+
+        OutlinedTextField(
+            value = query,
+            onValueChange = { query = it },
+            modifier = Modifier.fillMaxWidth(),
+            placeholder = { Text("So'z qidiring...") },
+            leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+            trailingIcon = {
+                if (query.isNotEmpty()) {
+                    IconButton(onClick = { query = "" }) {
+                        Icon(Icons.Default.Close, contentDescription = "Tozalash")
+                    }
+                }
+            },
+            singleLine = true,
+            shape = RoundedCornerShape(16.dp),
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = MaterialTheme.colorScheme.primary
+            )
+        )
+
+        Spacer(Modifier.height(8.dp))
+        Text(
+            "Topildi: ${results.size}",
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            fontSize = 13.sp
+        )
+        Spacer(Modifier.height(8.dp))
+
+        LazyColumn(modifier = Modifier.fillMaxSize()) {
+            items(results, key = { it.id }) { word ->
+                sozkartasi(
+                    word = word,
+                    isFavorite = favoriteIds.contains(word.id),
+                    onWordClick = { viewModel.pronounce(word) },
+                    onFavoriteClick = { viewModel.toggleFavorite(word) },
+                    onSpeakClick = { viewModel.pronounce(word) }
+                )
+            }
+            item { Spacer(Modifier.height(24.dp)) }
+        }
+    }
+}
+
+
+
+@Composable
+fun sevimlilarbolimi(viewModel: AppViewModel) {
+    val favoriteIds by viewModel.sevimli.collectAsState()
+    val favoriteWords = remember(favoriteIds) {
+        viewModel.hammasozlar.filter { favoriteIds.contains(it.id) }
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 18.dp)
+    ) {
+        Spacer(Modifier.height(20.dp))
+        Text("Sevimlilar", fontSize = 26.sp, fontWeight = FontWeight.Bold)
+        Spacer(Modifier.height(16.dp))
+
+        if (favoriteWords.isEmpty()) {
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Icon(
+                    Icons.Outlined.FavoriteBorder,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.outline,
+                    modifier = Modifier.size(56.dp)
+                )
+                Spacer(Modifier.height(12.dp))
+                Text(
+                    "Hozircha sevimli so'zlar yo'q",
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    fontSize = 15.sp
+                )
+            }
+        } else {
+            LazyColumn(modifier = Modifier.fillMaxSize()) {
+                items(favoriteWords, key = { it.id }) { word ->
+                    sozkartasi(
+                        word = word, isFavorite = true,
+                        onWordClick = { viewModel.pronounce(word) },
+                        onFavoriteClick = { viewModel.toggleFavorite(word) },
+                        onSpeakClick = { viewModel.pronounce(word) }
+                    )
+                }
+                item { Spacer(Modifier.height(24.dp)) }
+            }
+        }
+    }
+}
+
+@Composable
+fun tarixekran(viewModel: AppViewModel) {
+    val historyIds by viewModel.historyIds.collectAsState()
+    val favoriteIds by viewModel.sevimli.collectAsState()
+    val historyWords = remember(historyIds) {
+        historyIds.mapNotNull { id -> viewModel.hammasozlar.find { it.id == id } }
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 18.dp)
+    ) {
+        Spacer(Modifier.height(20.dp))
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text("Tarix", fontSize = 26.sp, fontWeight = FontWeight.Bold)
+            IconButton(onClick = { viewModel.clearHistory() }) {
+                Icon(Icons.Outlined.Delete, contentDescription = "Tarixni tozalash")
+            }
+        }
+        Spacer(Modifier.height(16.dp))
+
+        if (historyWords.isEmpty()) {
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Icon(
+                    Icons.Outlined.History,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.outline,
+                    modifier = Modifier.size(56.dp)
+                )
+                Spacer(Modifier.height(12.dp))
+                Text(
+                    "Tarix bo'sh",
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    fontSize = 15.sp
+                )
+            }
+        } else {
+            LazyColumn(modifier = Modifier.fillMaxSize()) {
+                items(historyWords, key = { it.id }) { word ->
+                    sozkartasi(
+                        word = word,
+                        isFavorite = favoriteIds.contains(word.id),
+                        onWordClick = { viewModel.pronounce(word) },
+                        onFavoriteClick = { viewModel.toggleFavorite(word) },
+                        onSpeakClick = { viewModel.pronounce(word) }
+                    )
+                }
+                item { Spacer(Modifier.height(24.dp)) }
+            }
+        }
+    }
+}
+
+@Composable
+fun sozlamaekrani(viewModel: AppViewModel) {
+    val isDarkMode by viewModel.DarkMode.collectAsState()
+    val followSystem by viewModel.followSystem.collectAsState()
+    val fontScale by viewModel.fontScale.collectAsState()
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 16.dp)
+    ) {
+        Spacer(Modifier.height(20.dp))
+        Text(
+            "Sozlamalar",
+            fontSize = 26.sp,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(bottom = 20.dp)
+        )
+
+        Text(
+            "Ko'rinish",
+            fontSize = 14.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+        Card(shape = RoundedCornerShape(16.dp), modifier = Modifier.fillMaxWidth()) {
+            Column {
+                sozlamalar(
+                    icon = Icons.Outlined.Brightness6,
+                    title = "Tizim mavzusiga mos",
+                    checked = followSystem,
+                    onCheckedChange = { viewModel.FollowSystem(it) }
+                )
+                HorizontalDivider()
+                sozlamalar(
+                    icon = Icons.Outlined.DarkMode,
+                    title = "Tungi rejim",
+                    checked = isDarkMode,
+                    enabled = !followSystem,
+                    onCheckedChange = { viewModel.setDarkMode(it) }
+                )
+            }
+        }
+
+        Spacer(Modifier.height(24.dp))
+        Text(
+            "Matn o'lchami",
+            fontSize = 14.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+
+        Card(shape = RoundedCornerShape(16.dp), modifier = Modifier.fillMaxWidth()) {
+            Column(modifier = Modifier.padding(16.dp)) {
+                Text("Shrift o'lchami: ${"%.1f".format(fontScale)}x")
+                Slider(
+                    value = fontScale,
+                    onValueChange = { viewModel.setFontScale(it) },
+                    valueRange = 0.8f..1.4f,
+                    steps = 5
+                )
+            }
+        }
+
+        Spacer(Modifier.height(24.dp))
+        Text(
+            "Boshqa",
+            fontSize = 14.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+
+        Card(shape = RoundedCornerShape(16.dp), modifier = Modifier.fillMaxWidth()) {
+            Column {
+                sozlamalarqatori(icon = Icons.Outlined.Add, title = "So'z qo'shish")
+                HorizontalDivider()
+                sozlamalarqatori(icon = Icons.Outlined.Info, title = "Biz haqimizda")
+                HorizontalDivider()
+                sozlamalarqatori(icon = Icons.Outlined.Star, title = "Baholash")
+                HorizontalDivider()
+                sozlamalarqatori(icon = Icons.Outlined.Share, title = "Ulashish")
+            }
+        }
+
+        Spacer(Modifier.height(24.dp))
+    }
+}
+
+@Composable
+private fun sozlamalar(
+    icon: ImageVector,
+    title: String,
+    checked: Boolean,
+    enabled: Boolean = true,
+    onCheckedChange: (Boolean) -> Unit
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 10.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Icon(icon, contentDescription = null, modifier = Modifier.size(22.dp))
+        Spacer(Modifier.width(12.dp))
+        Text(title, fontWeight = FontWeight.Medium, modifier = Modifier.weight(1f))
+        Switch(checked = checked, onCheckedChange = onCheckedChange, enabled = enabled)
+    }
+}
+
+@Composable
+private fun sozlamalarqatori(icon: ImageVector, title: String, onClick: () -> Unit = {}) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onClick() }
+            .padding(horizontal = 16.dp, vertical = 14.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Icon(icon, contentDescription = null, modifier = Modifier.size(22.dp))
+        Spacer(Modifier.width(12.dp))
+        Text(title, fontWeight = FontWeight.Medium)
+    }
+}
+
 
 
